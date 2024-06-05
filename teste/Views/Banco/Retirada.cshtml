@@ -1,0 +1,76 @@
+﻿@model teste.Entities.Banco
+@{
+    ViewData["Title"] = "Retirada de Valor";
+}
+<style>
+    .form-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 55px; /* Espaço superior */
+        border: 3px solid #333; /* Adiciona uma borda escura */
+    }
+</style>
+<br />
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <h1 class="display-4 text-center">Retirar Valor</h1>
+
+                <form asp-action="Retirada" method="post">
+                    <div class="mb-3">
+                        <label for="valor" class="form-label">Valor a Retirar:</label>
+                        <div class="input-group">
+                            <span class="input-group-text">R$</span>
+                            <input type="text" asp-for="Saida" id="precoInput" class="form-control" placeholder="Digite o Preço" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="razao" class="form-label">Motivo da Retirada:</label>
+                        <input type="text" asp-for="Razao" class="form-control" placeholder="Informe o motivo da retirada" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Dia" class="form-label">Data de Cadastro:</label>
+                        <input asp-for="Dia" class="form-control" placeholder="dd/mm/yyyy" required>
+                        <span asp-validation-for="Dia" class="text-danger"></span>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <a class="btn btn-secondary btn-block" asp-action="Index" role="button"><i class="fa-solid fa-arrow-rotate-left"></i> Voltar</a>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-dark btn-block float-md-end" type="submit"> Confirmar <i class="fa-solid fa-sack-dollar"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    
+        let precoInput = document.getElementById("precoInput");
+
+        precoInput.addEventListener("input", function () {
+            let inputValue = precoInput.value;
+
+            // Remover todos os caracteres não numéricos
+            let numericValue = inputValue.replace(/[^\d]/g, "");
+
+            // Adicionar vírgula antes dos dois últimos dígitos
+            let formattedValue = numericValue.replace(/(\d+)(\d{2})$/, '$1,$2');
+
+            // Adicionar vírgula após cada três dígitos à esquerda dos dois últimos
+            formattedValue = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+            precoInput.value = formattedValue;
+        });
+
+</script>

@@ -1,0 +1,150 @@
+﻿@model teste.Entities.Produto
+
+@{
+    ViewData["Title"] = "Editar Produto";
+}
+
+<style>
+    .login-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 50px; /* Espaço superior */
+        border: 3px solid #333; /* Adiciona uma borda escura */
+    }
+
+    .login-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="login-container">
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4">Editar Produto</h1>
+    </div>
+<form id="notaForm" asp-action="Edit" method="post" enctype="multipart/form-data">
+ <input type="hidden" asp-for="Id" />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label asp-for="Categoria" class="form-label">Categoria:</label>
+                <input asp-for="Categoria" class="form-control" placeholder="Digite a categoria" required>
+                <span asp-validation-for="Categoria" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NomeProduto" class="form-label">Produto:</label>
+                <input asp-for="NomeProduto" class="form-control" placeholder="Nome do Produto" required>
+                <span asp-validation-for="NomeProduto" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Sabor" class="form-label">Sabor:</label>
+                <input asp-for="Sabor" class="form-control" placeholder="Sabor do Produto">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Tipo" class="form-label">Tipo:</label>
+                <input asp-for="Tipo" class="form-control" placeholder="Tipo do Produto" required>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label asp-for="Recipiente" class="form-label">Recipiente:</label>
+                <input asp-for="Recipiente" class="form-control" placeholder="Modelo do Recipiente">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Peso" class="form-label">Peso:</label>
+                <input asp-for="Peso" class="form-control" placeholder="Digite o Peso do produto">
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Qtd" class="form-label">Quantidade:</label>
+                <input asp-for="Qtd" class="form-control" placeholder="Digite a quantidade" required>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Preco" class="form-label">Preço:</label>
+                <div class="input-group">
+                    <span class="input-group-text">R$</span>
+                    <input asp-for="Preco" id="precoInput" class="form-control" placeholder="Digite o Preço">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label asp-for="Marca" class="form-label">Marca:</label>
+                <input asp-for="Marca" class="form-control" placeholder="Nome da Marca">
+                <span asp-validation-for="Marca" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                    <label for="dataCadastro" class="form-label">Data de Validade (MM/YYYY)</label>
+                    <input type="text" id="validadeInput" asp-for="Validade" class="form-control" placeholder="MM/YYYY" maxlength="7" pattern="\d{2}/\d{4}" title="Digite o mês e o ano no formato MM/YYYY" required>
+                </div>
+       </div>
+
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label asp-for="CodBarra" class="form-label">Código-Barra:</label>
+                <input asp-for="CodBarra" class="form-control" placeholder="Digite o Código de Barra" required>
+                <span asp-validation-for="CodBarra" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Cadastro" class="form-label">Data de Cadastro:</label>
+                <input asp-for="Cadastro" class="form-control" placeholder="dd/mm/yyyy" >
+                <span asp-validation-for="Cadastro" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+                <a class="btn btn-secondary btn-block" asp-action="Index" role="button"><i class="fa-solid fa-arrow-rotate-left"></i> Voltar</a>
+        </div>
+        <div class="col-md-6">
+             <button class="btn btn-dark btn-block float-md-end" type="submit">Confirmar <i class="fa-regular fa-circle-check"></i></button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+<script>
+    let precoInput = document.getElementById("precoInput");
+
+    precoInput.addEventListener("input", function () {
+        let inputValue = precoInput.value;
+
+        // Remover todos os caracteres não numéricos
+        let numericValue = inputValue.replace(/[^\d]/g, "");
+
+        // Adicionar vírgula antes dos dois últimos dígitos
+        let formattedValue = numericValue.replace(/(\d+)(\d{2})$/, '$1,$2');
+
+        // Adicionar vírgula após cada três dígitos à esquerda dos dois últimos
+        formattedValue = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+        precoInput.value = formattedValue;
+    });
+
+    document.getElementById("validadeInput").addEventListener("input", function () {
+        var inputValue = this.value.trim();
+
+        if (inputValue.length === 2 && inputValue.indexOf('/') === -1) {
+            this.value = inputValue + '/';
+        }
+    });
+</script>

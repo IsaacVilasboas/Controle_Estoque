@@ -1,0 +1,278 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\isaac\\Desktop\\teste\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|c:\\users\\isaac\\desktop\\teste\\teste\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\lojacontext\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\lojacontext\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\banco\\retirada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\banco\\retirada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\notas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\notas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\notas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\notas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\produtos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\notas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\notas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|C:\\Users\\isaac\\Desktop\\teste\\teste\\views\\notas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE6CEF66-2F03-412D-9462-B876622EC720}|teste\\teste.csproj|solutionrelative:teste\\views\\notas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "teste\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T20:04:48.407Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\appsettings.json",
+              "RelativeDocumentMoniker": "teste\\appsettings.json",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\appsettings.json",
+              "RelativeToolTip": "teste\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-09T21:43:53.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Entities\\Produto.cs",
+              "RelativeDocumentMoniker": "teste\\Entities\\Produto.cs",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Entities\\Produto.cs",
+              "RelativeToolTip": "teste\\Entities\\Produto.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwCIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:41:49.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Create.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Notas\\Create.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Create.cshtml",
+              "RelativeToolTip": "teste\\Views\\Notas\\Create.cshtml",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAAAI0AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T15:36:16.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Produtos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Edit.cshtml",
+              "RelativeToolTip": "teste\\Views\\Produtos\\Edit.cshtml",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAswJQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T23:01:41.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Create.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Produtos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Create.cshtml",
+              "RelativeToolTip": "teste\\Views\\Produtos\\Create.cshtml",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAswIEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-30T23:01:11.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Retirada.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Banco\\Retirada.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Banco\\Retirada.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Banco\\Retirada.cshtml",
+              "RelativeToolTip": "teste\\Views\\Banco\\Retirada.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEYAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T15:37:00.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "teste\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "teste\\Controllers\\ProdutosController.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAwwL8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T19:38:51.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Program.cs",
+              "RelativeDocumentMoniker": "teste\\Program.cs",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Program.cs",
+              "RelativeToolTip": "teste\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAACoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T15:25:24.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\LojaContext\\Context.cs",
+              "RelativeDocumentMoniker": "teste\\LojaContext\\Context.cs",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\LojaContext\\Context.cs",
+              "RelativeToolTip": "teste\\LojaContext\\Context.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T19:47:53.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Notas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Edit.cshtml",
+              "RelativeToolTip": "teste\\Views\\Notas\\Edit.cshtml",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAswGkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T15:36:40.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Details.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Produtos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Details.cshtml",
+              "RelativeToolTip": "teste\\Views\\Produtos\\Details.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADUAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T16:21:54.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "teste\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "teste\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-06T15:38:17.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Details.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Notas\\Details.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Details.cshtml",
+              "RelativeToolTip": "teste\\Views\\Notas\\Details.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEIAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-06T17:12:05.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Index.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Produtos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Produtos\\Index.cshtml",
+              "RelativeToolTip": "teste\\Views\\Produtos\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAADwAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T16:21:31.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Index.cshtml",
+              "RelativeDocumentMoniker": "teste\\Views\\Notas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\isaac\\Desktop\\teste\\teste\\Views\\Notas\\Index.cshtml",
+              "RelativeToolTip": "teste\\Views\\Notas\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T16:32:40.846Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

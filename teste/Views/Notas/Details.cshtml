@@ -1,0 +1,88 @@
+﻿@model teste.Entities.Nota
+@{
+    ViewData["Title"] = "Informações da Venda";
+}
+
+<div class="text-center py-4">
+    <input type="hidden" asp-for="Id" />
+
+    
+
+    <br />
+    <br />
+
+    <style>
+        .register-container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+            max-width: 1600px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 50px; /* Espaço superior */
+            border: 3px solid #333; /* Adiciona uma borda escura */
+        }
+
+        .register-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <div class="register-container">
+    <h1 class="display-4">Informações sobre a venda</h1>
+
+    <table class="table table-striped ">
+
+        <thead class="thead-light">
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Produto</th>
+                <th scope="col" class="text-center">Pagamento</th>
+                <th scope="col" class="text-center">Quantidade</th>
+                <th scope="col" class="text-center">Custos</th>
+                <th scope="col" class="text-center">Valor</th>
+                <th scope="col" class="text-center">Lucro</th>
+                <th scope="col" class="text-center">Total</th>
+                <th scope="col" class="text-center">Cliente</th>
+                <th scope="col" class="text-center">Info Cliente</th>
+                <th scope="col" class="text-center">Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (true)
+            {
+                decimal? total = (Model.Valor  * Model.Uni) - Model.Gastos;
+                decimal? lucro = total - Model.FkProdutosNavigation?.Preco * Model.Uni;
+                <tr>
+                    <th scope="row" class="text-center">#</th>
+                    <td class="text-center">@Model.FkProdutosNavigation?.NomeProduto</td>
+                    <td class="text-center">@Model.Pagamento</td>
+                    <td class="text-center">@Model.Uni</td>
+                    <td class="text-center">R$ @Model.Gastos</td>
+                    <td class="text-center">R$ @Model.Valor</td>
+                    <td class="text-center">R$ @lucro</td>
+                    <td class="text-center">R$ @total</td>
+                    <td class="text-center">@Model.Clientes</td>
+                    <td class="text-center">@Model.Cpf</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm" title="Editar">
+                            <i class="fa-regular fa-pen-to-square"></i> Editar
+                        </a>
+                        |
+                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-dark btn-sm" title="Excluir">
+                            <i class="fa-regular fa-trash-can"></i> Excluir
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <div class="col-md-6 mx-auto">
+        <!-- Esta div envolve o botão de voltar -->
+        <a class="btn btn-secondary btn-block" asp-action="Index" role="button"><i class="fa-solid fa-arrow-rotate-left"></i> Voltar</a>
+    </div>
+</div>

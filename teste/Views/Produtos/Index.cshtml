@@ -1,0 +1,104 @@
+﻿@using teste.Entities
+@model List<Produto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+    .register-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 50px; /* Espaço superior */
+        border: 3px solid #333; /* Adiciona uma borda escura */
+    }
+
+    .register-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="register-container">
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Listagem de Produtos</h1>
+
+    <!-- Botões de Ação -->
+    <div class="d-grid gap-2 d-md-flex justify-content-between mb-3">
+        <div>
+            <a class="btn btn-warning btn-outline-dark" role="button" asp-action="Create"><i class="fa-solid fa-circle-plus"></i> Produtos</a>
+        </div>
+        <div>
+            <a class="btn btn-dark" role="button" asp-controller="Banco" asp-action="Index"><i class="fa-solid fa-piggy-bank"></i> Caixa</a>
+        </div>
+    </div>
+
+    <!-- Mensagens de Sucesso e Falha -->
+    @if (TempData["Sucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-sm close close-alert" aria-label="Close">X</button>
+            @TempData["Sucesso"]
+        </div>
+    }
+    @if (TempData["Falha"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-sm close close-alert" aria-label="Close">X</button>
+            @TempData["Falha"]
+        </div>
+    }
+
+
+<div class="table-responsive">
+     <table class="table table-striped table-bordered" id="table-produtos">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Produto</th>
+                <th scope="col" class="text-center">Sabor</th>
+                <th scope="col" class="text-center">Recipiente</th>
+                <th scope="col" class="text-center">Validade</th>
+                <th scope="col" class="text-center">Código</th>
+                <th scope="col" class="text-center">Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                int counter = 1;
+                foreach (Produto produto in Model)
+                {
+                    <tr>
+                        <td class="text-center">@counter</td>
+                        <td class="text-center">@produto.NomeProduto</td>
+                        <td class="text-center">@produto.Sabor</td>
+                        <td class="text-center">@produto.Recipiente</td>
+                        <td class="text-center">@produto.Validade.ToString("MM/yyyy")</td>
+                        <td class="text-center">@produto.CodBarra</td>
+                        <td class="text-center">
+                                <a asp-action="Details" asp-action="Edit" asp-route-id="@produto.Id" class="btn btn-outline-dark btn-sm" title="Editar">
+                                    <i class="fa-regular fa-circle-info"></i> Exibir
+                                </a>
+                                |
+                                    <a asp-action="Edit" asp-route-id="@produto.Id" class="btn btn-warning btn-outline-dark btn-sm" title="Editar">
+                                    <i class="fa-regular fa-pen-to-square"></i> Editar
+                                </a>
+                                |
+                                <a asp-action="Delete" asp-route-id="@produto.Id" class="btn btn-dark btn-sm" title="Excluir">
+                                    <i class="fa-regular fa-trash-can"></i> Excluir
+                                </a>
+                        </td>
+                    </tr>
+                    counter++;
+                }
+            }
+        </tbody>
+    </table>
+</div>
+</div>
+</div>

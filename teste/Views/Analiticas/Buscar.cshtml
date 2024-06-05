@@ -1,0 +1,50 @@
+﻿@model teste.Entities.Analitica
+@{
+    ViewData["Title"] = "Buscar Data";
+}
+<style>
+    .form-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 55px; /* Espaço superior */
+        border: 3px solid #333; /* Adiciona uma borda escura */
+    }
+</style>
+<br />
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-container">
+                <h1 class="display-4 text-center">Buscar Relatorio</h1>
+
+                <form asp-action="Buscar" method="post">
+                    <div class="mb-3">
+                        <label asp-for="Inicio" class="form-label">Data Início:</label>
+                        <input asp-for="Inicio" type="date" class="form-control" placeholder="dd/mm/yyyy" required>
+                        <span asp-validation-for="Inicio" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Final" class="form-label">Data Final:</label>
+                        <input asp-for="Final" type="date" class="form-control" placeholder="dd/mm/yyyy" required>
+                        <span asp-validation-for="Final" class="text-danger"></span>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <a class="btn btn-secondary btn-block" asp-controller="Banco" asp-action="Index" role="button"><i class="fa-solid fa-arrow-rotate-left"></i> Voltar</a>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-dark btn-block float-md-end" type="submit"> Confirmar <i class="fa-regular fa-circle-check"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

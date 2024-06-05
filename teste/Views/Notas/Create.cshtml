@@ -1,0 +1,143 @@
+﻿@model teste.Entities.Nota
+
+
+@{
+    ViewData["Title"] = "Adicionar Nota";
+}
+
+<br />
+
+<style>
+    .login-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+        max-width: 1600px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 50px; /* Espaço superior */
+        border: 3px solid #333; /* Adiciona uma borda escura */
+    }
+
+    .login-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="login-container">
+    <div class="container mt-5">
+        <div class="text-center">
+          <h1 class="display-4">Adicionar Nota</h1>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(TempData["Falha"] as string))
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["Falha"]
+        </div>
+    }
+
+    <form id="notaForm" asp-action="Create" method="post" enctype="multipart/form-data">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="clientes" class="form-label">Nome do Cliente:</label>
+                    <input type="text" asp-for="Clientes" class="form-control" placeholder="Digite o nome do cliente">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">Pagamento:</label>
+                    <input type="text" asp-for="Pagamento" class="form-control" placeholder="Forma de Pagamento" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF/Número:</label>
+                    <input type="text" asp-for="Cpf" class="form-control" placeholder="Digite o CPF ou número">
+                </div>
+
+                <div class="mb-3">
+                    <label for="uni" class="form-label">Quantidade:</label>
+                    <input type="number" asp-for="Uni" class="form-control" placeholder="Digite a quantidade" required>
+                    <span class="text-danger">@Html.ValidationMessageFor(model => model.Uni)</span>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="valor" class="form-label">Preço:</label>
+                    <div class="input-group">
+                        <span class="input-group-text">R$</span>
+                        <input type="text" asp-for="Valor" id="precoInput" class="form-control" placeholder="Digite o Preço" required>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Gastos" class="form-label">Gastos:</label>
+                    <div class="input-group">
+                        <span class="input-group-text">R$</span>
+                        <input asp-for="Gastos" id="gastosInput" class="form-control" placeholder="Digite o valor dos Gastos">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cod" class="form-label">Código de Barras:</label>
+                    <input type="text" id="cod" name="cod" class="form-control" placeholder="Digite o código de barras" required>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DataSaida" class="form-label">Data da Saida:</label>
+                    <input asp-for="DataSaida" class="form-control" placeholder="dd/mm/yyyy" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <a class="btn btn-secondary btn-block" asp-action="Index" role="button"><i class="fa-solid fa-arrow-rotate-left"></i> Voltar</a>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-dark btn-block float-md-end" type="submit"> Adicionar <i class="fa-regular fa-circle-check"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    
+        let precoInput = document.getElementById("precoInput");
+
+        precoInput.addEventListener("input", function () {
+            let inputValue = precoInput.value;
+
+            // Remover todos os caracteres não numéricos
+            let numericValue = inputValue.replace(/[^\d]/g, "");
+
+            // Adicionar vírgula antes dos dois últimos dígitos
+            let formattedValue = numericValue.replace(/(\d+)(\d{2})$/, '$1,$2');
+
+            // Adicionar vírgula após cada três dígitos à esquerda dos dois últimos
+            formattedValue = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+            precoInput.value = formattedValue;
+        });
+
+        let gastosInput = document.getElementById("gastosInput");
+
+        gastosInput.addEventListener("input", function () {
+            let inputValue = gastosInput.value;
+
+            // Remover todos os caracteres não numéricos
+            let numericValue = inputValue.replace(/[^\d]/g, "");
+
+            // Adicionar vírgula antes dos dois últimos dígitos
+            let formattedValue = numericValue.replace(/(\d+)(\d{2})$/, '$1,$2');
+
+            // Adicionar vírgula após cada três dígitos à esquerda dos dois últimos
+            formattedValue = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+
+            gastosInput.value = formattedValue;
+        });
+</script>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/teste.styles.css" asp-append-version="true" />
+    <link href="https://cdn.datatables.net/v/dt/dt-2.0.3/datatables.min.css" rel="stylesheet">
+    <link href="/css/all.min.css" rel="stylesheet" />
+    <link href="/css/fontawesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+<body class="admin-body">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="btn btn-dark" role="button" asp-area="" asp-controller="Home" asp-action="Index"> Home Page <i class="fa-solid fa-house-user"></i></a>
+                <a class="nav-link text-wight" asp-area="Admin" asp-controller="Admin" asp-action="Index">GM</a>
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminRoles" asp-action="Index">Gerenciar Roles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="Admin" asp-controller="AdminUsers" asp-action="Index">Gerenciar Usuários</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.0.3/datatables.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

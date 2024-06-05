@@ -1,0 +1,46 @@
+﻿@model RegisterViewModel
+@{
+    ViewBag.Title = "Registro de Usuário";
+}
+<style>
+    .register-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 50px; /* Espaço superior */
+        border: 2px solid #333; /* Adiciona uma borda escura */
+    }
+
+    .register-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+</style>
+<br />
+<br />
+
+<div class="register-container">
+    <h3 class="register-title">Registrar Usuário</h3>
+    <form method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Usuario">Usuário <span class="text-danger">*</span></label>
+            <input asp-for="Usuario" class="form-control" required />
+            <span asp-validation-for="Usuario" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Senha">Senha <span class="text-danger">*</span></label>
+            <input asp-for="Senha" type="password" class="form-control" required />
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="ConfSenha">Confirmar Senha <span class="text-danger">*</span></label>
+            <input asp-for="ConfSenha" type="password" class="form-control" required />
+            <span asp-validation-for="ConfSenha" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-dark mt-3">Registrar</button>
+    </form>
+</div>

@@ -1,0 +1,83 @@
+﻿@model teste.Entities.Produto
+
+@{
+    ViewData["Title"] = "Informações do Produto";
+}
+
+<div class="text-center py-4">
+    <input type="hidden" asp-for="Id" />
+
+
+
+    <br />
+    <br />
+
+    <style>
+        .register-container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 10px 0px rgba(0, 0, 0, 0.3) -5px -10px 10px 0px rgba(255, 255, 0.3);
+            max-width: 1600px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 50px; /* Espaço superior */
+            border: 3px solid #333; /* Adiciona uma borda escura */
+        }
+
+        .register-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <div class="register-container">
+        <h1 class="display-4">Informações do Produto</h1>
+        <table class="table table-striped ">
+        <thead class="table table-striped">
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Produto</th>
+                <th scope="col" class="text-center">Recipiente</th>
+                <th scope="col" class="text-center">Peso</th>
+                <th scope="col" class="text-center">Tipo</th>
+                <th scope="col" class="text-center">Unidade</th>
+                <th scope="col" class="text-center">Preço</th>
+                <th scope="col" class="text-center">Média</th>
+                <th scope="col" class="text-center">Marca</th>
+                <th scope="col" class="text-center">Cadastro</th>
+                <th scope="col" class="text-center">Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-center">#</td>
+                <td class="text-center">@Model.NomeProduto</td>
+                <td class="text-center">@Model.Recipiente</td>
+                <td class="text-center">@Model.Peso</td>
+                <td class="text-center">@Model.Tipo</td>
+                <td class="text-center">@Model.Qtd</td>
+                <td class="text-center">R$ @Model.Preco</td>
+                <td class="text-center">R$ @Model.Media</td>
+                <td class="text-center">@Model.Marca</td>
+                <td class="text-center">@Model.Cadastro.ToString("dd/MM/yyyy")</td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm" title="Editar">
+                        <i class="fa-regular fa-pen-to-square"></i> Editar
+                    </a>
+                    |
+                    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-dark btn-sm" title="Excluir">
+                        <i class="fa-regular fa-trash-can"></i> Excluir
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <div class="col-md-6 mx-auto">
+        <!-- Esta div envolve o botão de voltar -->
+        <a class="btn btn-secondary btn-block" asp-action="Index" role="button"><i class="fa-solid fa-arrow-rotate-left"></i> Voltar</a>
+    </div>
+</div>
+</div>
